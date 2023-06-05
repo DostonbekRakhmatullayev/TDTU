@@ -8,6 +8,7 @@ let elInput_E = document.querySelector(".input_E");
 let elInput_R = document.querySelector(".input_r");
 let elInput_C1 = document.querySelector(".input_c1");
 let elInput_C2 = document.querySelector(".input_c2");
+let elBtn2 = document.querySelector(".tozalash");
 
 //t_(т.р.)
 function tTp(f, t) {
@@ -34,7 +35,7 @@ function t(num) {
 }
 
 function func(tt0, PV, dd, ii, tt) {
-  let newItim = document.createElement("li");
+  let newItim = document.createElement("main");
   let newT0 = document.createElement("p");
   let newPVP = document.createElement("p");
   let newDd = document.createElement("p");
@@ -46,6 +47,12 @@ function func(tt0, PV, dd, ii, tt) {
   newDd.textContent = `d ${dd}`;
   newIi.textContent = `i ${ii}`;
   newTt.textContent = `tmt ${tt}`;
+
+  newT0.setAttribute("class", "newT0");
+  newPVP.setAttribute("class", "newPVP");
+  newDd.setAttribute("class", "newDd");
+  newIi.setAttribute("class", "newIi");
+  newTt.setAttribute("class", "newTt");
 
   newItim.appendChild(newT0);
   newItim.appendChild(newPVP);
@@ -76,4 +83,8 @@ elForm.addEventListener("submit", function (evt) {
   let ttt = t(iii);
 
   func(ttp, PVP, ddd, iii, ttt);
+  elForm.reset();
+});
+elBtn2.addEventListener("click", (el) => {
+  elList.innerHTML = null;
 });

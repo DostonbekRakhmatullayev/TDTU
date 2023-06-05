@@ -11,9 +11,12 @@ ul {
 
 body {
   /* background-color: rgb(64, 112, 112); */
-  background-color: rgb(46, 75, 75);
+  background-color: #e0e0e0;
 }
 
+.list {
+  padding: 0;
+}
 .container {
   max-width: 1250px;
   margin-left: auto;
@@ -35,7 +38,11 @@ body {
   color: black;
   font-size: 20px;
   text-align: center;
-  border: 0;
+  background-color: #f2f2f2;
+  border: 2px solid rgb(136, 136, 136);
+}
+.form__input:hover {
+  background-color: #c7c7c7;
 }
 .button_submit {
   width: 40%;
@@ -43,10 +50,11 @@ body {
   border-radius: 10px;
   margin-top: 20px;
   font-size: 20px;
-  border: 0;
+  border: 2px solid rgb(136, 136, 136);
 }
 .button_submit:hover {
-  background-color: rgb(11, 53, 237);
+  background-color: rgb(120, 118, 118);
+  color: rgb(255, 255, 255);
 }
 
 .box {
@@ -56,7 +64,9 @@ body {
   margin-top: 40px;
   border-radius: 10px;
   padding: 20px;
-  background-color: rgb(64, 112, 112);
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
 .box-beg {
@@ -64,4 +74,52 @@ body {
 }
 .text {
   text-align: center;
+}
+.bod-form {
+  display: flex;
+}
+
+.tozalash {
+  width: 120px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  border: 2px solid rgb(136, 136, 136);
+}
+.tozalash:hover {
+  background-color: rgb(120, 118, 118);
+  color: rgb(255, 255, 255);
+}
+
+.newT0 {
+  margin-top: 15px;
+  font-weight: bolder;
+  font-size: 20px;
+  color: rgb(40, 19, 19);
+}
+.newPVP {
+  margin-top: 15px;
+  font-weight: bolder;
+  font-size: 20px;
+  color: rgb(40, 19, 19);
+}
+.newDd {
+  margin-top: 15px;
+  font-weight: bolder;
+  font-size: 20px;
+  color: rgb(40, 19, 19);
+}
+.newIi {
+  margin-top: 15px;
+  font-weight: bolder;
+  font-size: 20px;
+  color: rgb(40, 19, 19);
+}
+.newTt {
+  margin-top: 15px;
+  font-weight: bolder;
+  font-size: 20px;
+  color: rgb(40, 19, 19);
 }
